@@ -1,0 +1,116 @@
+/* ==========================================================================
+   Responsive Enhancements for Clinic Management System
+   Author: Your Name
+   Description: Adjustments and overrides for different screen sizes
+   ========================================================================== */
+
+/* Extra Small Devices (max-width: 576px)
+   Usually phones in portrait mode */
+@media (max-width: 576px) {
+    /* Adjust heading sizes for smaller screens */
+    h1, h2, h3 {
+        font-size: 1.25rem;
+    }
+    h4, h5, h6 {
+        font-size: 1rem;
+    }
+
+    /* Reduce horizontal padding on .container and other elements */
+    .container, .container-fluid {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+
+    /* Navigation: ensure the navbar brand scales well */
+    .navbar-brand span {
+        font-size: 1rem;
+    }
+
+    /* In message views, reduce message bubble max-width */
+    .message-bubble {
+        max-width: 85%;
+    }
+}
+
+/* Small Devices (max-width: 768px)
+   Typically tablets and larger phones */
+@media (max-width: 768px) {
+    /* Reduce card padding for smaller screens */
+    .card-body {
+        padding: 0.75rem;
+    }
+
+    /* Adjust table font sizes for readability on small screens */
+    table, th, td {
+        font-size: 0.9rem;
+    }
+
+    /* Modals: ensure modal content fits smaller screens */
+    .modal-content {
+        border-radius: 0.25rem;
+    }
+
+    /* Appointment calendar or charts might need more vertical space, 
+       reduce margins between elements */
+    h2, h3, h4 {
+        margin-top: 1rem;
+        margin-bottom: 0.75rem;
+    }
+}
+
+/* Medium Devices (max-width: 992px)
+   Tablets in landscape mode, small laptops */
+@media (max-width: 992px) {
+    /* Adjust spacing in dashboard cards to fit more data */
+    .card-body .display-6 {
+        font-size: 1.5rem;
+    }
+
+    /* For complex pages like appointments and reports, 
+       reduce padding to display more content */
+    .messages-list, .table-responsive {
+        padding: 0.5rem;
+    }
+}
+
+/* Large Devices (max-width: 1200px)
+   Desktops and larger tablets */
+@media (max-width: 1200px) {
+    /* Slightly reduce padding in the navbar for better fit */
+    .navbar-nav .nav-link {
+        padding: 0.5rem 0.75rem;
+    }
+
+    /* Make sure forms and inputs look good on moderately sized screens */
+    .form-control, .form-select {
+        font-size: 0.95rem;
+    }
+}
+
+/* Extra Large Devices (max-width: 1400px)
+   Large desktops and wide monitors */
+@media (max-width: 1400px) {
+    /* Increase the width of sidebars or lists if needed */
+    .messages-sidebar {
+        width: 30%;
+    }
+    .messages-main {
+        width: 70%;
+    }
+
+    /* Ensure text columns don’t become too wide */
+    .container {
+        max-width: 1100px;
+    }
+}
+
+/* Additional adjustments for RTL if needed (optional) */
+[dir="rtl"] {
+    /* Reverse margins or paddings as necessary for RTL layouts */
+    @media (max-width: 576px) {
+        .message-bubble {
+            margin-right: auto;
+            margin-left: 0; 
+        }
+    }
+}

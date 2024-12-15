@@ -1,0 +1,145 @@
+/* ==========================================================================
+   Custom Style for Clinic Management System
+   Author: Your Name
+   Description: Enhancements to complement Bootstrap for a modern, clean look.
+   ========================================================================== */
+
+/* Body and Typography */
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: #f8f9fa; /* Matches Bootstrap's light background */
+    color: #212529; /* Default text color */
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* Links and Buttons */
+a {
+    text-decoration: none;
+    color: #0d6efd; /* Bootstrap primary color */
+}
+a:hover {
+    color: #0a58ca;
+    text-decoration: underline;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a53be;
+}
+
+/* Navbar */
+.navbar-brand img {
+    vertical-align: middle;
+}
+
+.navbar-brand span {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: 600;
+    color: #0d6efd !important;
+}
+
+.navbar-light .navbar-toggler {
+    border: none;
+}
+
+/* Cards and Containers */
+.card {
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.card-header {
+    font-weight: 600;
+    background-color: #fff;
+    border-bottom: 1px solid #dee2e6;
+}
+
+/* Tables */
+.table > :not(caption) > * > * {
+    vertical-align: middle;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* Badges */
+.badge {
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+    border-radius: 0.25rem;
+    padding: 0.35em 0.5em;
+}
+
+/* Forms */
+.form-control, .form-select {
+    border-radius: 0.25rem;
+}
+
+/* Modals */
+.modal-content {
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.modal-header {
+    border-bottom: 1px solid #dee2e6;
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+/* Utilities */
+.text-muted {
+    color: #6c757d !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.mt-auto {
+    margin-top: auto !important;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .navbar-brand span {
+        font-size: 1.1rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+}

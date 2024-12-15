@@ -1,0 +1,131 @@
+project_root/
+├─ public/
+│  ├─ index.php
+│  ├─ login.php
+│  ├─ dashboard.php
+│  ├─ patient.php
+│  ├─ appointments.php
+│  ├─ services.php
+│  ├─ medics.php
+│  ├─ reports.php
+│  ├─ system.php
+│  ├─ messages.php
+│  ├─ assets/
+│  │  ├─ css/
+│  │  │  ├─ style.css
+│  │  │  ├─ responsive.css
+│  │  │  └─ theme-ar.css
+│  │  ├─ js/
+│  │  │  ├─ main.js
+│  │  │  ├─ charts.js
+│  │  │  └─ languageToggle.js
+│  │  ├─ images/
+│  │  │  └─ logo.png
+│  │  ├─ icons/
+│  │  ├─ fonts/
+│  │  └─ vendor/
+│  ├─ .htaccess
+│  └─ uploads/
+├─ app/
+│  ├─ config/
+│  │  ├─ config.php
+│  │  ├─ database.php
+│  │  ├─ language.php
+│  │  └─ routes.php
+│  ├─ controllers/
+│  │  ├─ AuthController.php
+│  │  ├─ AppointmentController.php
+│  │  ├─ PatientController.php
+│  │  ├─ ServiceController.php
+│  │  ├─ ReportController.php
+│  │  ├─ SystemController.php
+│  │  └─ MessagingController.php
+│  ├─ models/
+│  │  ├─ UserModel.php
+│  │  ├─ PatientModel.php
+│  │  ├─ AppointmentModel.php
+│  │  ├─ ServiceModel.php
+│  │  ├─ MedicineModel.php
+│  │  ├─ ReportModel.php
+│  │  └─ SubscriptionModel.php
+│  ├─ views/
+│  │  ├─ templates/
+│  │  │  ├─ header.php
+│  │  │  ├─ footer.php
+│  │  │  ├─ sidebar.php
+│  │  │  ├─ navbar.php
+│  │  │  └─ messages.php
+│  │  ├─ login/
+│  │  │  ├─ login_form.php
+│  │  │  ├─ register_form.php
+│  │  │  └─ forgot_password.php
+│  │  ├─ dashboard/
+│  │  │  └─ index.php
+│  │  ├─ patient/
+│  │  │  ├─ list.php
+│  │  │  ├─ add.php
+│  │  │  ├─ edit.php
+│  │  │  └─ history.php
+│  │  ├─ appointments/
+│  │  │  ├─ list.php
+│  │  │  ├─ add.php
+│  │  │  ├─ temporary.php
+│  │  │  ├─ approved.php
+│  │  │  ├─ active.php
+│  │  │  └─ finished.php
+│  │  ├─ services/
+│  │  │  ├─ index.php
+│  │  │  ├─ add_service.php
+│  │  │  ├─ add_medicine.php
+│  │  │  └─ edit_service.php
+│  │  ├─ medics/
+│  │  │  └─ index.php
+│  │  ├─ reports/
+│  │  │  ├─ index.php
+│  │  │  └─ print_report.php
+│  │  └─ system/
+│  │     ├─ index.php
+│  │     ├─ edit_clinic_info.php
+│  │     ├─ manage_receptionists.php
+│  │     ├─ subscription_details.php
+│  │     └─ backup_restore.php
+│  ├─ helpers/
+│  │  ├─ functions.php
+│  │  ├─ languageHelper.php
+│  │  ├─ authHelper.php
+│  │  └─ validationHelper.php
+│  ├─ middlewares/
+│  │  ├─ AuthMiddleware.php
+│  │  └─ RoleMiddleware.php
+│  └─ routes/
+│     ├─ web.php
+│     └─ api.php
+├─ database/
+│  ├─ schema.sql
+│  ├─ migrations/
+│  ├─ seeds/
+│  └─ backups/
+├─ languages/
+│  ├─ en.php
+│  └─ ar.php
+├─ composer.json
+├─ .env
+└─ README.md
+
+
+
+app/                # Application core files
+    config/         # Configuration files
+    controllers/    # Controllers for handling requests
+    helpers/        # Helper functions
+    middlewares/    # Middleware for access control
+    models/         # Database models
+    routes/         # Web and API route definitions
+    views/          # Blade-style templates
+assets/             # CSS, JS, images, and fonts
+database/           # Database migration and seed files
+public/             # Publicly accessible files
+languages/          # Localization files
+tests/              # PHPUnit test cases
+
+
